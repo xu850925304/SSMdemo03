@@ -21,13 +21,15 @@ public class AttendanceController {
 	@Autowired
 	@Qualifier("attendanceService")
 	private AttendanceService attendanceService;
+	
+	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test(HttpServletRequest request, Model model) {
 		String aname = request.getParameter("aname");
 		System.out.println("aname:" + aname);
 		Attendance attendance = null;
 
-		model.addAttribute("attendance", attendance);
+		model.addAttribute("Attendance", attendance);
 		return "index";
 	}
 	

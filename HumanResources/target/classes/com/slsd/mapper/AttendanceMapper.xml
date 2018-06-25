@@ -18,7 +18,7 @@
 	<insert id="addAttendance" useGeneratedKeys="false" keyProperty="aid"
 		parameterType="com.slsd.entity.Attendance">
 		insert into Attendance (aid,aname,areason,adate)
-		values(tea_seq.nextval,#{aname},#{areason},#{adate})
+		values(aid,#{aname},#{areason},#{adate})
 	</insert>
 	<update id="editAttendance" parameterType="Attendance">
 		update Attendance set

@@ -41,5 +41,9 @@ public class Attendance {
 	public Attendance() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "Attendance [aid=" + aid + ", aname=" + aname + ", areason=" + areason + ", adate=" + adate + "]";
+	}
 		
 }
